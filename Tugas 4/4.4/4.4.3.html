@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Java Script 0bject </title>
+
+    <Script>
+
+        var Person = {
+            Email: "",
+
+            NIM: "",
+
+            Nama: "",
+
+            ValidasiData: function () {
+
+                if ((this.Email != "") && (this.NIM != "") && (this.Nama != "")) {
+
+                    return "OK";
+                } else {
+                    return "NG";
+                }
+            }
+        }
+
+        function Createobject(pEmail, pNIM, pNama) {
+            Person.Email = pEmail;
+            Person.NIM = pNIM;
+            Person.Nama = pNama;
+
+        }
+            function Loadobject() {
+                document.getElementById("iPerson").value =
+                    "Email: " + Person.Email + " " +
+                    "NIM: " + Person.NIM + " " +
+                    "Nama:" + Person.Nama + +
+                    "Validasi: " + Person.ValidasiData();
+            }
+    </script>
+
+</head>
+
+<body>
+
+    <input type="text" id="iEmail" placeholder="Masukkan Email" />
+    <input type="text" id="iNIM" placeholder="Masukkan NIM" />
+    <input type="text" id="iName" placeholder="Hasukkan Nama" />
+
+    <button type="button" 
+        onclick='CreateObject(
+            document.getElementById("iEmail") .value,
+            document.getElementById("iNIM").value,
+            document.getElementById ("iName").value)'> Create</button>
+
+    <br><br>
+
+    <button type="button" onclick='LoadObject()'>Load</button>
+
+    <input type="text" id="iPerson" style="width: 550px;" readonly />
+
+</body>
+</html>

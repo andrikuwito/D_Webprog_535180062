@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Java Script Introduction</title>
+
+    <style>
+        .MakeRed {
+            color: red;
+        }
+
+        .Hide {
+            visibility: hidden;
+        }
+
+        .show {
+            visibility: visible;
+        }
+    </style>
+
+    <script>
+        function changeLing2(){
+            function changeLine1Style() {
+                document.getElementById("cLine1").className = "MakeRed";
+            }
+
+            function ChangeStyle(id, classname) {
+                document.getElementbyId(id).className = classname;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button type="button" onclick='document.getElementById("cLine1").className="MakeRed"'>Go</button>
+    <p id="cLine1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar volutpat nisi, vitae maximus
+        tellus rhoncus at </p>
+
+    <button type="button" onclick='document.getElementById("cLine2").className="Hide"'>Hide</button>
+    <button type="button" onclick='document.getElementById("cLine1").className="show"'>show</button>
+    <p id="cLine2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar volutpat nisi, vitae maximus
+        tellus rhoncus at </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar volutpat nisi, vitae maximus
+        tellus rhoncus at </p>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> Java Script Object</title>
+
+    <Script>
+
+        var saya;
+
+        function Person(pEmail, pNIM, pNama) {
+
+            this.Email = pEmail;
+
+            this.NIM = pNIM;
+
+            this.Nama = pNama;
+
+            this.ValidasiData = function () {
+                if ((this.Email != "") && (this.NIM != "") && (this.Nama != "")){
+                    return "OK";
+                }
+                else {
+                    return "NG";
+                }
+            }
+        }
+                function Create0bject(pEmail, pNIM, pNama) {
+                    Saya = new Person(PEmail, pNIM, pNama);
+
+                    function Loadobject() {
+
+                        document.getElementById("iPerson").value =
+                            "Email: " + Saya.Email + "" +
+                            "NIM:" + Saya.NIM"" +
+                                "Nama:" + Saya.Nama + ""
+                        "Validasi: " + Saya.validasiData();
+                    }
+                }
+    </script>
+
+</head>
+
+<body>
+
+    <input type="text" id="iEmail" placeholder="Masukkan Email" />
+    <input type="text" id="iNIM" placeholder="Masukkan NIM" />
+    <input type="text" id="iName" placeholder="Hasukkan Nama" />
+
+    <button type="button" 
+        onclick='CreateObject(
+            document.getElementById("iEmail") .value,
+            document.getElementById("iNIM").value,
+            document.getElementById ("iName").value)'> Create</button>
+
+    <br><br>
+
+    <button type="button" onclick='LoadObject()'>Load</button>
+
+    <input type="text" id="iPerson" style="width: 550px;" readonly />
+
+</body>
+</html>

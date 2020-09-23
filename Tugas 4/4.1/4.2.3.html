@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title> Java Script DataType </title>
+
+    <script>
+
+        function Add(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) + Number(inp2)
+        }
+        function sub(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) - Number(inp2)
+        }
+        function kal(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) * Number(inp2)
+        }
+        function bag(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) / Number(inp2)
+        }
+        function mod(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) % Number(inp2)
+        }
+        function pag(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) ** Number(inp2)
+        }
+        
+    </script>
+
+</head>
+
+<body>
+
+    <input type="number" id="iNumAdd1" /> +
+    <input type="number" id="iNumAdd2" />
+    <button type="button" onclick='Add("oResAdd", document.getElementById("iNumAdd1").value ,document.getElementById("iNumAdd2").value)'>=</button>
+    <input type="number" id="oResAdd" readonly/>
+
+    
+
+    <br><br>
+
+    <input type="number" id="iNumsub1" /> -
+    <input type="number" id="iNumsub2" />
+    <button type="button" onclick='sub ("oRessub", document.getElementById ("iNumsub1").value , document.getElementById("iNumsub2").value) '>=</button>
+    <input type="number" id="oRessub" />
+
+    <br><br>
+
+    <input type="number" id="iNumkal1" /> *
+    <input type="number" id="iNumkal2" />
+    <button type="button" onclick='kal ("oReskal", document.getElementById ("iNumkal1").value , document.getElementById("iNumkal2").value) '>=</button>
+    <input type="number" id="oReskal" />
+
+    <br><br>
+
+    <input type="number" id="iNumbag1" /> /
+    <input type="number" id="iNumbag2" />
+    <button type="button" onclick='bag ("oResbag", document.getElementById ("iNumbag1").value , document.getElementById("iNumbag2").value) '>=</button>
+    <input type="number" id="oResbag" />
+
+    <br><br>
+
+    <input type="number" id="iNummod1" /> %
+    <input type="number" id="iNummod2" />
+    <button type="button" onclick='mod ("oResmod", document.getElementById ("iNummod1").value , document.getElementById("iNummod2").value) '>=</button>
+    <input type="number" id="oResmod" />
+
+    <br><br>
+
+    <input type="number" id="iNumpag1" /> **
+    <input type="number" id="iNumpag2" />
+    <button type="button" onclick='pag ("oRespag", document.getElementById ("iNumpag1").value , document.getElementById("iNumpag2").value) '>=</button>
+    <input type="number" id="oRespag" />
+
+
+
+</body>
+
+</html>

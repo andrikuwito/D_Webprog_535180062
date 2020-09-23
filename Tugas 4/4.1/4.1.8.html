@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title> Java Script Introduction</title>
+
+    <style>
+        .MakeRed {
+
+            color: red;
+        }
+
+        .Hide {
+
+            visibility: hidden;
+        }
+
+        .Show {
+
+            visibility: visible;
+        }
+    </style>
+
+    <script>
+
+        function Changestyle(pId, pClassName) {
+            console.log(pId);
+            console.log(pClassName);
+            document.getElementById(pId).className = pClassName;
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- <button type="button" onclick= 'ChangeStyLe("cLine","MakeRed")'>Go</button> -->
+    <button type="button" onclick='ChangeStyle("cLine1", "MakeRed")'>Go</button>
+    <p id="cLine1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet ultrices iaculis .
+    </p>
+
+</body>
+
+</html>
