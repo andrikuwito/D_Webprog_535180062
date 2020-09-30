@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript getElementsByTagName() Demo</title>
+</head>
+
+<body>
+    <h1>JavaScript getElementsByTagName() Demo</h1>
+    <h1>First Heading</h1>
+    <p>This is The First paragraph</p>
+    <h2>Second Heading</h2>
+    <p>This is the second paragraph</p>
+    <h2>Third Heading</h2>
+    <p>this is the third paragraph</p>
+
+    <button id="btnCount">Count H2</button>
+
+    <script>
+        var btn = document.getElementById('btnCount');
+        btn.addEventListener('click',()=>{
+            var heading = document.getElementsByTagName('h2');
+            
+                    alert(`The number of H2 tags ${heading.length}`)
+                
+        })
+    </script>
+</body>
+
+</html>

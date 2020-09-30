@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript parentNode</title>
+</head>
+
+<body>
+    <div id="container">
+
+    </div>
+    <script>
+        let div = document.createElement('div');
+
+        div.id='content';
+        div.className='classcontent';
+        // div.innerHTML='<p>contoh createElement</p>';
+        
+        let text = document.createTextNode('CreateElement menggunakanTextNode');
+        div.appendChild(text);
+        document.body.appendChild(div);
+        // var c = document.getElementById("container").appendChild(div);
+    </script>
+</body>
+
+</html>
